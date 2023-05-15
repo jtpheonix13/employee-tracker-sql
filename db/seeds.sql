@@ -16,10 +16,10 @@ VALUES ('Sales Manager', 40000, 1),
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ('Jim', 'Halpert', 1, NULL ),
-       ('Dwight', 'Schrute', 1, 1),
-       ('Angela', 'Martin', 2, NULL),
-       ('Kevin', 'Malone', 2, 3),
-       ('Ashley', 'Rodriguez', 3, NULL),
-       ('Kevin', 'Tupik', 3, 4),
-       ('Sarah', 'Lourd', 4, NULL),
-       ('Tom', 'Allen', 4, 4);
+       ('Dwight', 'Schrute', 2, 1),
+       ('Angela', 'Martin', 3, NULL),
+       ('Kevin', 'Malone', 4, 3),
+       ('Ashley', 'Rodriguez', 5, NULL),
+       ('Kevin', 'Tupik', 6, 5),
+       ('Sarah', 'Lourd', 7, NULL),
+       ('Tom', 'Allen', 8, 7);
