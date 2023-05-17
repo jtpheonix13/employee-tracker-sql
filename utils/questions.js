@@ -9,7 +9,7 @@ const startMenu = [
         type: "list",
         name: "selection",
         message: "What would you like to do?",
-        choices: ["View all Departments", "View all Roles", "View all Employees", "Add a Department", "Add a Role", "Add an Employee", "Update an Employee Role"]
+        choices: ["View all Departments", "View all Roles", "View all Employees", "Add a Department", "Add a Role", "Add an Employee", "Update an Employee Role", "Quit"]
     }
 ];
 
@@ -35,10 +35,9 @@ const addRole = [
         message: "What is the salary for the role?"
     },
     {
-        type: "list",
+        type: "input",
         name: "roleDepartment",
-        message: "What department does the role belong to?",
-        choices: departmentArray
+        message: "Input the ID of the department the role belongs to."
     }
 ];
 
@@ -55,32 +54,29 @@ const newEmployee = [
         message: "Enter the employee's Last Name."
     },
     {
-        type: "list",
+        type: "input",
         name: "employeeRole",
-        message: "What is the employees role?",
-        choices: roleArray
+        message: "What is the ID associated with the employees role?",
     },
     {
-        type: "list",
+        type: "input",
         name: "employeeManager",
-        message: "Who is the employee's manager?",
-        choices: employeeArray
+        message: "What is the employee's manager ID?",
+        
     }
 ];
 
 // prompts for updating employees role
 const updateRole = [
     {
-        type: "list",
+        type: "input",
         name: "employee",
-        message: "Choose an employee to update.",
-        choices: employeeArray
+        message: "Enter the ID of the employee you wish to update."
     },
     {
-        type: "list",
+        type: "input",
         name: "role",
-        message: "Select a new role to assign to this employee.",
-        choices: roleArray
+        message: "Enter the employee's new role ID."
     }
 ];
 
