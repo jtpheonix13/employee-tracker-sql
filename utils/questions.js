@@ -82,4 +82,6 @@ const updateRole = [
         message: "Select a new role to assign to this employee.",
         choices: roleArray
     }
-]
+];
+
+module.exports = {departmentArray, roleArray, employeeArray, startMenu, addDepartment, addRole, newEmployee, updateRole };
